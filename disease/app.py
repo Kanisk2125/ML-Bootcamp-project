@@ -7,10 +7,12 @@ from streamlit_option_menu import option_menu
 
 # heart_disease_model =pd.read_csv(open('heart_disease_model.csv','rb'))
 # parkinsons_model =pd.read_csv(open('parkinsons_model.csv','rb'))
-diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
-heart_disease_model = pickle.load(open('heart_disease_model.sav','rb'))
-parkinsons_model = pickle.load(open('parkinsons_model.sav','rb'))
-
+#diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
+#heart_disease_model = pickle.load(open('heart_disease_model.sav','rb'))
+#parkinsons_model = pickle.load(open('parkinsons_model.sav','rb'))
+diabetes_model = pickle.load(open('diabetes_model.pkl', 'rb'))
+heart_disease_model = pickle.load(open('heart_disease_model.pkl','rb'))
+parkinsons_model = pickle.load(open('parkinsons_model.pkl','rb'))
 # loading the saved models
 
 # diabetes_model = pickle.load(open(r'C:/Users/HP/OneDrive/Desktop/disease/diabetes_model.sav', 'rb'))
