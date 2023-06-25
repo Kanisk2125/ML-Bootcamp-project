@@ -1,7 +1,7 @@
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
-import pandas as pd
+# import pandas as pd
 
 # diabetes_model = pd.read_csv(open('diabetes_model.csv','rb'))
 
