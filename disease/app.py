@@ -14,11 +14,11 @@ import os
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 pickle_file_path = os.path.join(script_dir, 'diabetes_model.pkl')
-diabetes_model = pickle.load(open('diabetes_model.pkl', 'rb'))
-pickle_file_path = os.path.join(script_dir, 'heart_disease_model.pkl')
-heart_disease_model = pickle.load(open('heart_disease_model.pkl','rb'))
-pickle_file_path = os.path.join(script_dir, 'parkinsons_model.pkl')
-parkinsons_model = pickle.load(open('parkinsons_model.pkl','rb'))
+diabetes_model = pickle.load(open('pickle_file_path', 'rb'))
+pickle_file_path1 = os.path.join(script_dir, 'heart_disease_model.pkl')
+heart_disease_model = pickle.load(open('pickle_file_path1','rb'))
+pickle_file_path2 = os.path.join(script_dir, 'parkinsons_model.pkl')
+parkinsons_model = pickle.load(open(pickle_file_path2','rb'))
 #with open('diabetes_model.pkl', 'rb') as handle:
     #diabetes_model = pickle.load(handle)
 
