@@ -1,6 +1,7 @@
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
+import os
 # import pandas as pd
 
 # diabetes_model = pd.read_csv(open('diabetes_model.csv','rb'))
@@ -10,8 +11,13 @@ from streamlit_option_menu import option_menu
 #diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
 #heart_disease_model = pickle.load(open('heart_disease_model.sav','rb'))
 #parkinsons_model = pickle.load(open('parkinsons_model.sav','rb'))
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+pickle_file_path = os.path.join(script_dir, 'diabetes_model.pkl')
 diabetes_model = pickle.load(open('diabetes_model.pkl', 'rb'))
+pickle_file_path = os.path.join(script_dir, 'heart_disease_model.pkl')
 heart_disease_model = pickle.load(open('heart_disease_model.pkl','rb'))
+pickle_file_path = os.path.join(script_dir, 'parkinsons_model.pkl')
 parkinsons_model = pickle.load(open('parkinsons_model.pkl','rb'))
 #with open('diabetes_model.pkl', 'rb') as handle:
     #diabetes_model = pickle.load(handle)
