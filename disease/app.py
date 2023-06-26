@@ -18,7 +18,7 @@ diabetes_model = pickle.load(open('pickle_file_path', 'rb'))
 pickle_file_path1 = os.path.join(script_dir, 'heart_disease_model.pkl')
 heart_disease_model = pickle.load(open('pickle_file_path1','rb'))
 pickle_file_path2 = os.path.join(script_dir, 'parkinsons_model.pkl')
-parkinsons_model = pickle.load(open(pickle_file_path2','rb'))
+parkinsons_model = pickle.load(open('pickle_file_path2','rb'))
 #with open('diabetes_model.pkl', 'rb') as handle:
     #diabetes_model = pickle.load(handle)
 
